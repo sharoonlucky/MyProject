@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="./Loginpage.css">
+        <script src="./Login.js" defer></script>
+    </head>
+    <body>
+        <div id="outerCont">
+            <div id="innerCont">
+                <h1 id="heading">Login</h1>
+                <form>
+                    <div class="inputdiv" id="inputdiv">
+                        <input type="text" placeholder="Enter Email" required> 
+                    </div>
+
+                    <div class="inputdiv" id="inputdiv">
+                        <input type="Password" placeholder="Enter Password" required>
+                        <img id="passvis"src="./Button.jpg" onmouseup="passVis()" onmousedown="passHid()">
+                    </div>
+                    <p id="status"></p>
+                    <div id="loginButton"><input type="button" value="Login" onclick="passvalid()" onmousedown="bigButton()" onmouseup="smallButton()"></div>
+            </div>
+            <input type="button" value="SignIn" id="sign">
+                </form>    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+}
+header video
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(60%);
+
+}
+header video
+{
+    width: 100%;
+    height: 100vh;
+}
+#headerArrow,#secArrow1,#secArrow2
+{
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    transition: all 0.2s;
+    z-index: 3;
+    right: 45%;
+}
+#headerArrow:hover,#secArrow1:hover,#secArrow2:hover
+{
+    transform: translateY(20ox);
+    rotate: 180deg;
+}
+#heading1,#heading2
+{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    color: rgb(8, 25, 253);
+    letter-spacing: 50px;
+    word-spacing: 20px;
+    text-shadow: 5px 5px 5px black;
+    font-family:'poltawaski nowy',serif;
+}
+#heading1
+{
+    width: 40px;
+    height: 20px;
+}
+#heading2
+{
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-shadow: 5px 5px 5px black;
+    font-family:'poltawaski nowy',serif;
+    transform: translateY(220px);
+    filter: opacity(0);
+}
+#bikeAni,#heading1
+{
+    width: 100%;
+    height: 20px;
+    position: absolute; 
+    z-index: 3;
+    transform: translateX(-950px);
+}
+#heading1
+{
+    width: 60px;
+    height: 30px;
+    color: brown;
+    background-color: blue;
+}
+#bikeimg
+{
+    position: absolute;
+    z-index: 3;
+    width: 20%;
+    height: 20vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 40vh;
+}
+#sec1,#sec2,#sec3
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#sec2
+{
+    background-color: white;
+}
+#secArrow1,#secArrow2
+{
+    width: 50px;
+    height: 40px;
+    /* rotate: -270deg; */
+}
+.bikes
+{
+    background-image:"E:\Java Script\Project-1\Kawasaki Ninja H2R.jpg";
+    background-size: 120% 100%;
+    background-position: center;
+    height: 80vh;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    clip-path: polygon(34% 0,100% 0%,100% 100%,0% 100%);
+    transition: background-size 0.2s,background-position 0.2s;
+}
+.bikes:hover
+{
+    background-size: 160% 140%;
+}
+.bikePara
+{
+    color: white;
+    width: 50%;
+    padding: 0px 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-indent: 20px;
+    text-align: justify;
+}
+.bikeName
+{
+    color: lawngreen;
+    font-size: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bike2name 
+{
+    color: purple;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#bike1Name
+{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+#bike2Para
+{
+    color: black;
+}
+#bike2
+{
+    background-image: "E:\Java Script\Project-1\Ducati Superleggera V4.jpg"; 
+    background-position: 60px,0px;
+}
+footer
+{
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#footer .logo
+{
+    width: 30px;
+    height: 20px;
+}
+.logo
+{
+    padding-left: 20px;
+    transition:transform 0.2s;
+}
+.logo:hover
+{
+    transform: scale(1.2);
+}
+#logout
+{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    z-index: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
